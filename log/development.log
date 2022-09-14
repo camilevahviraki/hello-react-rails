@@ -4617,3 +4617,114 @@ Started GET "/service-worker.js" for ::1 at 2022-09-14 23:42:09 +0200
   
 ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
   
+Started GET "/" for ::1 at 2022-09-15 00:18:53 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GreetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering greetings/index.html.erb within layouts/application
+  Rendered greetings/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 255.6ms | Allocations: 57420)
+Completed 200 OK in 273ms (Views: 262.4ms | ActiveRecord: 0.0ms | Allocations: 60850)
+
+
+Started GET "/greeting" for ::1 at 2022-09-15 00:18:56 +0200
+Processing by GreetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering greetings/index.html.erb within layouts/application
+  Rendered greetings/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3661)
+Completed 200 OK in 18ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4005)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-15 00:18:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/api/v1/greetings" for ::1 at 2022-09-15 00:18:56 +0200
+Started POST "/api/v1/greetings" for ::1 at 2022-09-15 00:18:56 +0200
+Processing by Api::V1::GreetingsController#update as HTML
+Processing by Api::V1::GreetingsController#update as HTML
+  Parameters: {"azerty"=>243, "greeting"=>{}}
+  Parameters: {"azerty"=>243, "greeting"=>{}}
+Can't verify CSRF token authenticity.
+Can't verify CSRF token authenticity.
+  [1m[36mGreeting Load (1.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:10:in `update'
+  [1m[36mGreeting Load (1.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:10:in `update'
+Completed 200 OK in 105ms (Views: 0.2ms | ActiveRecord: 39.1ms | Allocations: 17745)
+
+
+Completed 200 OK in 106ms (Views: 0.1ms | ActiveRecord: 29.8ms | Allocations: 17833)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-15 00:18:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/greeting" for ::1 at 2022-09-15 00:19:04 +0200
+Processing by GreetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering greetings/index.html.erb within layouts/application
+  Rendered greetings/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3581)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3878)
+
+
+Started POST "/api/v1/greetings" for ::1 at 2022-09-15 00:19:04 +0200
+Processing by Api::V1::GreetingsController#update as HTML
+  Parameters: {"azerty"=>243, "greeting"=>{}}
+Can't verify CSRF token authenticity.
+  [1m[36mGreeting Load (0.7ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:10:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1070)
+
+
+Started POST "/api/v1/greetings" for ::1 at 2022-09-15 00:19:04 +0200
+Processing by Api::V1::GreetingsController#update as HTML
+  Parameters: {"azerty"=>243, "greeting"=>{}}
+Can't verify CSRF token authenticity.
+  [1m[36mGreeting Load (1.7ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:10:in `update'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 904)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-15 00:19:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/greeting" for ::1 at 2022-09-15 00:19:06 +0200
+Processing by GreetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering greetings/index.html.erb within layouts/application
+  Rendered greetings/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 9680)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 9957)
+
+
+Started POST "/api/v1/greetings" for ::1 at 2022-09-15 00:19:06 +0200
+Processing by Api::V1::GreetingsController#update as HTML
+Started POST "/api/v1/greetings" for ::1 at 2022-09-15 00:19:06 +0200
+  Parameters: {"azerty"=>243, "greeting"=>{}}
+Processing by Api::V1::GreetingsController#update as HTML
+  Parameters: {"azerty"=>243, "greeting"=>{}}
+Can't verify CSRF token authenticity.
+Can't verify CSRF token authenticity.
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:10:in `update'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 1028)
+
+
+  [1m[36mGreeting Load (1.9ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/greetings_controller.rb:10:in `update'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 1952)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-15 00:19:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-15 00:19:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
