@@ -1,24 +1,59 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# hello-react-rails
 
-Things you may want to cover:
+> This App is a saple of combination between rails and react
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby on Rails
+- PostgresSQL
+- React
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy up and running follow these simple example steps.
 
-* Database initialization
+To get a local copy up and running follow these simple example steps.
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+  - A web editor like Atom or Vs code
+  - Install ruby and rails
 
-* Deployment instructions
+### Setup
+  - Copy this link `https://github.com/camilevahviraki/hello-react-rails`.
+  - Get the directory that you want to clone the repository.
+  - Open the command prompt in this directory.
+  - Write `git clone https://github.com/camilevahviraki/hello-react-rails`.
+  - Go to the repository folder in your command prompt `cd recipe-rails`.
 
-* ...
+### Install
+  - run `bundle install`
+  - run `npm install`
+
+
+### Usage
+  - run `bin/dev` to start the local server or
+
+## Author
+
+👤 **Camile**
+
+- GitHub: [@camilevahviraki](https://github.com/camilevahviraki)
+- Twitter: [@camilevahviraki](https://twitter.com/CamileVahviraki)
+- LinkedIn: [camilevahviraki](https://www.linkedin.com/in/camile-vahviraki)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- Microverse
+- etc
